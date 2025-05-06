@@ -1,0 +1,43 @@
+.titulo {
+    text-align: center;
+    width: 100%;
+    background-color: brown;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body {
+    background-image: url(imagens/de\ fundo.png);
+}
+h2 {
+    text-align: center;
+    color: white;
+    
+}
+.camisa1 {
+    width: 300px;
+    height: 300px;
+    
+}
+
+h3 {
+    color: rgb(23, 77, 23);
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(10) infinite alternate-reverse;
+
+    
+}
+ @keyframes typing {
+    from {
+        width: 0ch;
+    }
+ }
+
+.Cadastro {
+    text-align: right;
+}
+form {
+    text-align: right;
+}
+
