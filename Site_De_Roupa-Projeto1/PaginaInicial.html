@@ -5,62 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rastro Urbano</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/GIF" href="/Site_De_Roupa-Projeto1/imagens/PIEXEL.gif">
-
-
+    <link rel="icon" type="image/gif" href="/Site_De_Roupa-Projeto1/imagens/PIEXEL.gif" />
   </head>
   <body>
-    <!-----------------PAGINA INICIAL RODAPÉ---------------------->
-    <header>
+    <header class="cabecalho">
       <h1 class="titulo">Rastro Urbano</h1>
+      <p class="subtitulo">Moda com personalidade para quem deixa sua marca na cidade</p>
+      <nav class="menu">
+        <a href="PaginaInicial.html">Home</a>
+        <a href="Contato.html">Contato</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="Roupas.html" class="destaque">Confira nossas marcas!</a>
+      </nav>
     </header>
-    <hr />
-    <h3>Moda com personalidade para quem deixa sua marca na cidade</h3>
-    <hr />
-    <br />
-    <section id="sobre">
-      <h3>Sobre a Rastro Urbano</h3>
-      <p>
-        Somos uma loja de moda urbana focada em estilo, autenticidade e atitude.
-        Nossas peças são escolhidas para quem quer marcar presença por onde
-        passa.
-      </p>
-    </section>
-    <header>
-      <a href="PaginaInicial.html"><h3>Home</h3></a>
-  </header>
-  <header>
-      <a href="Contato.html"><h3>Contato</h3></a>
-  </header>
-  <header>
-      <a href="Sobre.html"><h3>Sobre</h3></a>
-  </header>
 
-    <section id="produto">
-    <a id="marca" href="Roupas.html"><h2>Confira nossas marcas!!</h2></a>
-  </section>
-<h2 class="Cadastro">Faça seu cadastro!!!</h2>
-<br>
-    <form>
-      <label for="Nome" class="nome">Nome completo:</label>
-      <input type="text" placeholder="Digite seu nome completo">
-      <br>
-      <br>
+    <main>
+      <section class="sobre">
+        <h2>Sobre a Rastro Urbano</h2>
+        <p>
+          Somos uma loja de moda urbana focada em estilo, autenticidade e atitude.
+          Nossas peças são escolhidas para quem quer marcar presença por onde passa.
+        </p>
+      </section>
 
-      <label for="Email" class="email">Email:</label>
-      <input type="email" placeholder="Digite seu email">
-      <br><br>
-      <label id="texto" for="mensagem">deixe sua Mensagem</label>
-      <textarea id="mensagem" placeholder="Escreva aqui..."></textarea>
-      <br><br>
-      <button type="submit">Enivar!</button>
-      
-      
+      <section class="cadastro">
+        <h2>Faça seu cadastro</h2>
+        <form>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
 
-    </form>
-    <br>
-    <br>
-    
-    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+          
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
