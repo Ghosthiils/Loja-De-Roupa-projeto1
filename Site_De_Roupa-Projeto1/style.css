@@ -1,430 +1,162 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('imagens/de fundo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #f5f5f5;
-    line-height: 1.6;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #444;
-  }
-  
-  .titulo {
-    font-size: 2.5rem;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-  
-  /* Navegação */
-  nav {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 10px 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ffa500;
-  }
-  
-  /* Seção de apresentação */
-  section#sobre {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(34, 34, 34, 0.8);
-    border-radius: 10px;
-  }
-  
-  section#sobre h3 {
-    font-size: 1.6rem;
-    color: #ffa500;
-    margin-bottom: 10px;
-  }
-  
-  section#sobre p {
-    font-size: 1.1rem;
-  }
-  
-  /* Link de marcas */
-  #marca {
-    display: block;
-    text-align: center;
-    font-size: 1.4rem;
-    color: #00ffcc;
-    margin: 30px 0;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  #marca:hover {
-    color: #ffa500;
-  }
-  
-  /* Seção de cadastro */
-  .Cadastro {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #ffa500;
-    margin-top: 40px;
-  }
-  
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-  }
-  
-  form label {
-    display: block;
-    margin-top: 20px;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
-  }
-  
-  form button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ffa500;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #222;
-    transition: background-color 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #ff8000;
-  }
-  
-  /* Rodapé (se quiser adicionar depois) */
-  footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-    color: #aaa;
-    margin-top: 40px;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .titulo {
-      font-size: 2rem;
-    }
-  }
-  body {
-    margin: 0;
-    background: #111 url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
-    padding: 0;
-  }
-  
-  header {
-    background: #000;
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 2px solid #ff3c00;
-  }
-  
-  header h1 {
-    font-family: 'Anton', sans-serif;
-    font-size: 3rem;
-    margin: 0;
-    color: #ff3c00;
-    letter-spacing: 2px;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-  }
-  
-  section {
-    margin-bottom: 60px;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #ff3c00;
-    font-family: 'Anton', sans-serif;
-  }
-  
-  section p {
-    font-size: 1.1rem;
-    text-align: justify;
-  }
-  
-  blockquote {
-    font-style: italic;
-    background: #222;
-    padding: 15px 20px;
-    border-left: 5px solid #ff3c00;
-    margin: 30px 0;
-    color: #ccc;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 30px;
-    background: #000;
-    border-top: 2px solid #ff3c00;
-    color: #aaa;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  @media (max-width: 600px) {
-    header h1 { font-size: 2.2rem; }
-    section h2 { font-size: 1.6rem; }
-  }
-  
-  .navbar {
-    background: #1a1a1a;
-    border-bottom: 2px solid #ff3c00;
-    text-align: center;
-  }
-  
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .navbar li a {
-    display: block;
-    padding: 15px 10px;
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .navbar li a:hover {
-    color: #ff3c00;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #000;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #f00;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #fff;
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #f00;
+}
+
+.menu a.ativo {
+  color: #f00;
+  border-bottom: 2px solid #f00;
+}
+
+/* Hero */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1536305030015-dc2c7c6f73bf');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #f00;
+  text-shadow: 2px 2px #000;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-destaque {
+  background-color: #f00;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-destaque:hover {
+  background-color: #c00;
+}
+
+/* Seção Sobre */
+.sobre {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f00;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #f00;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    color: white;
-  }
-  
-  .form-contato label {
-    font-weight: bold;
-  }
-  
-  .form-contato input,
-  .form-contato textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .form-contato button {
-    background-color: brown;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .form-contato button:hover {
-    background-color: #8b0000;
-  }
-  
-  /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Corpo */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #111 url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    color: #f0f0f0;
-    line-height: 1.8;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #000;
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 2px solid #ff3c00;
-  }
-  
-  .titulo {
-    font-family: 'Anton', sans-serif;
-    font-size: 3rem;
-    color: #ff3c00;
-    letter-spacing: 2px;
-  }
-  
-  /* Slogan */
-  .slogan {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.3rem;
-    color: #ffa500;
-  }
-  
-  /* Navegação */
-  .navbar {
-    background: #1a1a1a;
-    border-bottom: 2px solid #ff3c00;
-    text-align: center;
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 10px 0;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-  
-  .navbar li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-  }
-  
-  .navbar li a:hover {
-    color: #ff3c00;
-  }
-  
-  /* Ofertas */
-  #oferta {
-    text-align: center;
-    margin: 30px 0;
+  .hero h2 {
     font-size: 2rem;
-    color: #ff3c00;
   }
-  
-  .ofertas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+
+  .hero p {
+    font-size: 1rem;
   }
-  
-  .produto {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
-    transition: transform 0.3s;
-  }
-  
-  .produto:hover {
-    transform: scale(1.05);
-  }
-  
-  .produto img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .produto h2 {
-    color: #ffa500;
-    font-size: 1.2rem;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #000;
-    padding: 30px;
-    border-top: 2px solid #ff3c00;
-    text-align: center;
-    color: #aaa;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 600px) {
-    .titulo {
-      font-size: 2rem;
-    }
-  
-    .navbar ul {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .produto {
-      max-width: 90%;
-    }
-  }
-  
-  
+}

@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rastro Urbano</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/gif" href="/Site_De_Roupa-Projeto1/imagens/PIEXEL.gif" />
-  </head>
-  <body>
-    <header class="cabecalho">
-      <h1 class="titulo">Rastro Urbano</h1>
-      <p class="subtitulo">Moda com personalidade para quem deixa sua marca na cidade</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rastro Urbano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/gif" href="/Site_De_Roupa-Projeto1/imagens/PIEXEL.gif" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="cabecalho">
+    <div class="container">
+      <h1 class="logo">Rastro Urbano</h1>
       <nav class="menu">
-        <a href="PaginaInicial.html">Home</a>
-        <a href="Contato.html">Contato</a>
-        <a href="Sobre.html">Sobre</a>
-        <a href="Roupas.html" class="destaque">Confira nossas marcas!</a>
+        <ul>
+          <li><a href="PaginaInicial.html" class="ativo">Home</a></li>
+          <li><a href="Roupas.html">Coleção</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="sobre">
-        <h2>Sobre a Rastro Urbano</h2>
-        <p>
-          Somos uma loja de moda urbana focada em estilo, autenticidade e atitude.
-          Nossas peças são escolhidas para quem quer marcar presença por onde passa.
-        </p>
-      </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Moda com atitude</h2>
+      <p>Vista a cidade. Marque presença. Seja único.</p>
+      <a href="Roupas.html" class="btn-destaque">Ver Coleção</a>
+    </div>
+  </section>
 
-      <section class="cadastro">
-        <h2>Faça seu cadastro</h2>
-        <form>
-          <label for="nome">Nome completo:</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+  <!-- Sobre -->
+  <main class="conteudo">
+    <section class="sobre" id="sobre">
+      <h2>Sobre a Rastro Urbano</h2>
+      <p>
+        A Rastro Urbano é mais do que uma loja de roupas: é um estilo de vida.
+        Criamos coleções para quem vive a cidade, o skate, a arte e a liberdade.
+        Nossas peças refletem personalidade e ousadia para quem quer deixar sua marca nas ruas.
+      </p>
+    </section>
+  </main>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
+  </footer>
 
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
-          
-
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="rodape">
-      <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+</body>
 </html>
