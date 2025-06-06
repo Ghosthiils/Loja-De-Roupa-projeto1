@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rastro Urbano</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/gif" href="/Site_De_Roupa-Projeto1/imagens/PIEXEL.gif" />
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header class="cabecalho">
+  <header>
     <div class="container">
       <h1 class="logo">Rastro Urbano</h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="PaginaInicial.html" class="ativo">Home</a></li>
-          <li><a href="Roupas.html">Coleção</a></li>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="PaginaInicial.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
           <li><a href="Sobre.html">Sobre</a></li>
           <li><a href="Contato.html">Contato</a></li>
         </ul>
@@ -24,31 +21,65 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Moda com atitude</h2>
-      <p>Vista a cidade. Marque presença. Seja único.</p>
-      <a href="Roupas.html" class="btn-destaque">Ver Coleção</a>
-    </div>
-  </section>
+  <main>
+    <section class="banner">
+      <div class="banner-texto">
+        <h2>Estilo que deixa rastro</h2>
+        <p>Moda streetwear para quem vive o urbano</p>
+        <a href="produtos.html" class="btn">Ver Produtos</a>
+      </div>
+    </section>
 
-  <!-- Sobre -->
-  <main class="conteudo">
-    <section class="sobre" id="sobre">
-      <h2>Sobre a Rastro Urbano</h2>
-      <p>
-        A Rastro Urbano é mais do que uma loja de roupas: é um estilo de vida.
-        Criamos coleções para quem vive a cidade, o skate, a arte e a liberdade.
-        Nossas peças refletem personalidade e ousadia para quem quer deixar sua marca nas ruas.
-      </p>
+    <section id="produtos" class="produtos">
+      <h2>Produtos em Destaque</h2>
+      <div class="produtos-grid">
+        
+        <div class="produto">
+          <img src="imagens/StreetWear original.jpg" alt="Camiseta Street" />
+          <h3>Camiseta Street</h3>
+          <p>R$ 79,90</p>
+          <a href="produtos.html" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="produto">
+          <img src="imagens/Moletom Oversized.jpg" alt="Moletom Oversized" />
+          <h3>Moletom Oversized</h3>
+          <p>R$ 149,90</p>
+          <a href="produtos.html" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="produto">
+          <img src="imagens/Boné Snapback.jpg" alt="Boné Snapback" />
+          <h3>Boné Snapback</h3>
+          <p>R$ 59,90</p>
+          <a href="produtos.html" class="btn-comprar">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre a Rastro Urbano</h2>
+        <p>Somos uma marca que traduz o estilo das ruas em peças exclusivas. Com design ousado, qualidade e atitude, nossa missão é vestir quem se expressa por meio da moda urbana.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Fale com a gente pelo WhatsApp:</p>
+        <a id="whatsapp-button" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+      </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="rodape">
-    <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://pt-br.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
   </footer>
-
 </body>
 </html>

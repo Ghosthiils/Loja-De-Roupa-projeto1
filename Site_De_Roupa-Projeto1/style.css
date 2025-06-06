@@ -1,4 +1,5 @@
-/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,157 +7,529 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #111;
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.unsplash.com/photo-1581092334680-15e001fd814b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
-  line-height: 1.6;
-}
-
-/* Cabeçalho */
-.cabecalho {
-  background-color: #000;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: slideDown 1s ease forwards;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .logo {
-  color: #f00;
+  font-family: 'Anton', sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px #fff;
+  color: #fff;
 }
 
-/* Menu */
-.menu ul {
+nav .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: -30px;
 }
 
-.menu a {
+nav .nav-links li a {
+  color: #fff;
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
-  padding: 10px 15px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
 }
 
-.menu a:hover {
-  border-bottom: 2px solid #f00;
-}
-
-.menu a.ativo {
-  color: #f00;
-  border-bottom: 2px solid #f00;
-}
-
-/* Hero */
-.hero {
-  background-image: url('https://images.unsplash.com/photo-1536305030015-dc2c7c6f73bf');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.banner {
+  margin-top: 100px;
   text-align: center;
-  position: relative;
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  inset: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-}
-
-.hero h2 {
+.banner h2 {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: #f00;
-  text-shadow: 2px 2px #000;
+  font-family: 'Anton', sans-serif;
 }
 
-.hero p {
+.banner p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.btn-destaque {
-  background-color: #f00;
+.btn, .btn-comprar, #whatsapp-button {
+  background-color: #e50914;
   color: #fff;
-  padding: 12px 25px;
+  padding: 10px 25px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.btn-destaque:hover {
-  background-color: #c00;
+.btn:hover, .btn-comprar:hover, #whatsapp-button:hover {
+  background-color: #ff1e2d;
+  transform: scale(1.05);
 }
 
-/* Seção Sobre */
-.sobre {
-  background-color: #1a1a1a;
-  padding: 60px 20px;
+.produtos, .sobre, .contato {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 20px;
   text-align: center;
 }
 
-.sobre h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #f00;
-}
-
-.sobre p {
-  max-width: 700px;
-  margin: auto;
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-/* Rodapé */
-.rodape {
-  background-color: #000;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  border-top: 2px solid #f00;
+.produtos-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-top: 40px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
+.produto {
+  background-color: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  color: #e50914;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-top: -30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main.contato-section {
+  margin-top: 120px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+main p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+  color: #aaa;
+}
+
+.btn {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff1e2d;
+}
+
+#whatsapp-button {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#whatsapp-button:hover {
+  background-color: #1ebe5c;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  color: #e50914;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.unsplash.com/photo-1558981403-c5f9899c838b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-top: -30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main.sobre-section {
+  margin-top: 120px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.blocos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+}
+
+.bloco {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.bloco:hover {
+  transform: scale(1.02);
+}
+
+.bloco h3 {
+  font-size: 1.8rem;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.bloco p,
+.bloco ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bloco ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloco ul li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  color: #e50914;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .blocos {
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .hero h2 {
-    font-size: 2rem;
+  .bloco {
+    flex: 1;
   }
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
 
-  .hero p {
-    font-size: 1rem;
-  }
+header {
+  background-color: #000;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #2ecc71;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2ecc71;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.produto-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.produto-card:hover {
+  transform: scale(1.03);
+}
+
+.produto-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.produto-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.produto-card p {
+  font-size: 1.2rem;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.botao-comprar {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-comprar:hover {
+  background-color: #27ae60;
+}
+
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
