@@ -29,7 +29,40 @@ header {
   z-index: 10;
   animation: slideDown 1s ease forwards;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  font-family: 'Anton', sans-serif;
+  
 }
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e50914;
+  color: #fff;
+}
+
 
 .logo {
   font-family: 'Anton', sans-serif;
@@ -54,20 +87,22 @@ nav .nav-links li a {
 .banner {
   margin-top: 100px;
   text-align: center;
-  padding: 100px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+  background-size: cover;
+  color: #fff;
 }
 
 .banner h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-family: 'Anton', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
 }
 
 .banner p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin: 20px 0;
 }
+
 
 .btn, .btn-comprar, #whatsapp-button {
   background-color: #e50914;
@@ -93,57 +128,70 @@ nav .nav-links li a {
   text-align: center;
 }
 
-.produtos-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 40px;
-}
+
 
 .produto {
-  background-color: #111;
-  color: white;
-  padding: 15px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
   border-radius: 12px;
-  text-align: center;
-  width: 250px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produto:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
 }
 
+
 .produto img {
-  max-width: 100%;
+  width: 100%;
+  height: 250px; /* define uma altura fixa para todas as imagens */
+  object-fit: cover; /* corta e ajusta para caber no espaço sem distorcer */
   border-radius: 5px;
 }
 
-footer {
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
+.btn-comprar {
+  background-color: #e60000;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.redes-sociais {
-  margin-top: 10px;
+.btn-comprar:hover {
+  background-color: #ff1a1a;
+}
+
+
+footer {
+  background-color: #000;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 2px solid #e50914;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #aaa;
 }
 
 .redes-sociais a {
-  color: #e50914;
+  color: #fff;
   margin: 0 10px;
-  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .redes-sociais a:hover {
-  text-decoration: underline;
+  color: #e50914;
 }
+
 
 @keyframes slideDown {
   0% {
@@ -155,13 +203,7 @@ footer {
     opacity: 1;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -262,20 +304,19 @@ main p {
 }
 
 #whatsapp-button {
-  display: inline-block;
-  margin-top: 25px;
   background-color: #25d366;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
   font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #whatsapp-button:hover {
-  background-color: #1ebe5c;
+  background-color: #1ebe5d;
+  transform: scale(1.05);
 }
+
 
 footer {
   background-color: #000;
@@ -297,13 +338,7 @@ footer {
 .redes-sociais a:hover {
   text-decoration: underline;
 }
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -476,19 +511,23 @@ h2 {
   color: #2ecc71;
 }
 
+
 .produtos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .produto-card {
   background-color: #1c1c1c;
   border-radius: 10px;
   padding: 1rem;
-  text-align: center;
+  text-align: center; /* Centraliza textos e botões */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRALIZA A IMAGEM E O CONTEÚDO */
 }
 
 .produto-card:hover {
@@ -496,10 +535,10 @@ h2 {
 }
 
 .produto-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .produto-card h3 {
   color: #fff;
@@ -533,3 +572,28 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+.sobre {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  padding: 60px 20px;
+  color: #ccc;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.container-produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card-produto {
+  background: #111;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+

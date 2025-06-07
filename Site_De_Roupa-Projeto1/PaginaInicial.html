@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rastro Urbano</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">Rastro Urbano</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="PaginaInicial.html">Home</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="Sobre.html">Sobre</a></li>
-          <li><a href="Contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Rastro Urbano</h1>
+    <nav>
+      <ul>
+        <li><a href="PaginaInicial.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
+    <!-- Hero -->
     <section class="banner">
       <div class="banner-texto">
         <h2>Estilo que deixa rastro</h2>
@@ -30,10 +32,34 @@
       </div>
     </section>
 
+    <!-- Destaques -->
+    <section class="destaques">
+      <div class="container">
+        <h2>Por que escolher a Rastro Urbano?</h2>
+        <div class="cards-destaque">
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/e50914/street-view.png" alt="Estilo Autêntico" />
+            <h3>Estilo Autêntico</h3>
+            <p>Roupas urbanas que representam atitude e originalidade.</p>
+          </div>
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/e50914/clothes.png" alt="Qualidade Premium" />
+            <h3>Qualidade Premium</h3>
+            <p>Material resistente, confortável e com acabamento impecável.</p>
+          </div>
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/e50914/delivery.png" alt="Entrega Rápida" />
+            <h3>Entrega Rápida</h3>
+            <p>Receba seu estilo em casa com agilidade e segurança.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
     <section id="produtos" class="produtos">
       <h2>Produtos em Destaque</h2>
       <div class="produtos-grid">
-        
         <div class="produto">
           <img src="imagens/StreetWear original.jpg" alt="Camiseta Street" />
           <h3>Camiseta Street</h3>
@@ -55,6 +81,7 @@
       </div>
     </section>
 
+    <!-- Sobre -->
     <section id="sobre" class="sobre">
       <div class="container">
         <h2>Sobre a Rastro Urbano</h2>
@@ -62,11 +89,12 @@
       </div>
     </section>
 
+    <!-- Contato -->
     <section id="contato" class="contato">
       <div class="container">
         <h2>Contato</h2>
         <p>Fale com a gente pelo WhatsApp:</p>
-        <a id="whatsapp-button" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+        <a id="whatsapp-button" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
       </div>
     </section>
   </main>
@@ -75,9 +103,9 @@
     <div class="container">
       <p>&copy; 2025 Rastro Urbano. Todos os direitos reservados.</p>
       <div class="redes-sociais">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://pt-br.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
       </div>
     </div>
   </footer>
