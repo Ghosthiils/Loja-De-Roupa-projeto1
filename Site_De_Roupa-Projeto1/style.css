@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: url('https://images.unsplash.com/photo-1581092334680-15e001fd814b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  font-family: "Roboto", sans-serif;
+  background: url("https://images.unsplash.com/photo-1581092334680-15e001fd814b?auto=format&fit=crop&w=1920&q=80")
+    no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -29,11 +30,10 @@ header {
   z-index: 10;
   animation: slideDown 1s ease forwards;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  font-family: 'Anton', sans-serif;
-  
+  font-family: "Anton", sans-serif;
 }
 header h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 3rem;
   color: #e50914;
   text-transform: uppercase;
@@ -63,9 +63,8 @@ nav ul li a:hover {
   color: #fff;
 }
 
-
 .logo {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -88,7 +87,11 @@ nav .nav-links li a {
   margin-top: 100px;
   text-align: center;
   padding: 120px 20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9)
+  );
   background-size: cover;
   color: #fff;
 }
@@ -103,8 +106,9 @@ nav .nav-links li a {
   margin: 20px 0;
 }
 
-
-.btn, .btn-comprar, #whatsapp-button {
+.btn,
+.btn-comprar,
+#whatsapp-button {
   background-color: #e50914;
   color: #fff;
   padding: 10px 25px;
@@ -117,18 +121,20 @@ nav .nav-links li a {
   margin-top: 10px;
 }
 
-.btn:hover, .btn-comprar:hover, #whatsapp-button:hover {
+.btn:hover,
+.btn-comprar:hover,
+#whatsapp-button:hover {
   background-color: #ff1e2d;
   transform: scale(1.05);
 }
 
-.produtos, .sobre, .contato {
+.produtos,
+.sobre,
+.contato {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 50px 20px;
   text-align: center;
 }
-
-
 
 .produto {
   background-color: #1a1a1a;
@@ -136,7 +142,7 @@ nav .nav-links li a {
   border-radius: 12px;
   padding: 20px;
   width: 280px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -144,7 +150,6 @@ nav .nav-links li a {
   transform: scale(1.07);
   box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
 }
-
 
 .produto img {
   width: 100%;
@@ -167,7 +172,6 @@ nav .nav-links li a {
 .btn-comprar:hover {
   background-color: #ff1a1a;
 }
-
 
 footer {
   background-color: #000;
@@ -192,7 +196,6 @@ footer p {
   color: #e50914;
 }
 
-
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
@@ -204,10 +207,10 @@ footer p {
   }
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background: url('https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  font-family: "Roboto", sans-serif;
+  background: url("https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?auto=format&fit=crop&w=1920&q=80")
+    no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -228,7 +231,7 @@ header {
 }
 
 .logo {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -257,7 +260,7 @@ main.contato-section {
 main h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 main p {
@@ -317,7 +320,6 @@ main p {
   transform: scale(1.05);
 }
 
-
 footer {
   background-color: #000;
   text-align: center;
@@ -339,10 +341,10 @@ footer {
   text-decoration: underline;
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background: url('https://images.unsplash.com/photo-1558981403-c5f9899c838b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  font-family: "Roboto", sans-serif;
+  background: url("https://images.unsplash.com/photo-1558981403-c5f9899c838b?auto=format&fit=crop&w=1920&q=80")
+    no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -363,7 +365,7 @@ header {
 }
 
 .logo {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -392,7 +394,7 @@ main.sobre-section {
 main h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .intro {
@@ -472,7 +474,7 @@ footer {
   }
 }
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #111;
   color: #f1f1f1;
   margin: 0;
@@ -509,46 +511,6 @@ h2 {
   text-align: center;
   margin-bottom: 2rem;
   color: #2ecc71;
-}
-
-
-.produtos-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.produto-card {
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center; /* Centraliza textos e botões */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* CENTRALIZA A IMAGEM E O CONTEÚDO */
-}
-
-.produto-card:hover {
-  transform: scale(1.03);
-}
-
-.produto-card img {
-  display: block;
-  margin: 0 auto;
-}
-
-
-.produto-card h3 {
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-
-.produto-card p {
-  font-size: 1.2rem;
-  color: #2ecc71;
-  margin-bottom: 1rem;
 }
 
 .botao-comprar {
@@ -597,3 +559,19 @@ footer {
   width: 250px;
 }
 
+.produtos-grid {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 40px;
+}
+.produtos-grid img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
